@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>Download Page</title>
+<h1><a class="header" href='https://hchung1.github.io/'>Hchung1</a></h1>
+<style>
+  body {
+    background-image: url('forest.jpeg');
+    background-size: cover;
+    background-position: center center;
+  }
+  .button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+  }
+  .header{
+   background: #ee8713;
+  }
+  .box{
+   background: #25eea5;
+  }
+</style>
+</head>
+<body>
+  <div>
+    <div class="container-fluid">
+      <button id="about"><b>About</b></button>
+      <button id="download"><b>Download</b></button>
+      <button id="about"><b>About</b></button>
+      <button id="source"><b>Source</b></button>
+    </div>
+    <br>
+    <div class="container-fluid box">
+      <label>Practicing a download link below.</label>
+      <br>
+      <a href="icon.png" download>
+        <img border="0" src="icon.png" width="50" height="50">
+      </a>
+      <br>
+      
+      <br>
+      <button class="button" id="source"><b>Sources</b></button>
+    </div>
+  </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('#about').click(function(){
+      $(location).attr('href', 'about.html')
+    });
+    $('#download').click(function(){
+      $(location).attr('href', 'downloadlink.html')
+    });
+    $('#source').click(function(){
+      $(location).attr('href', 'links.html')
+    });
+  });
+</script>
+</html>
+
+

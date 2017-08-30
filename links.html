@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>Source Page</title>
+<h1><a class="header" href='https://hchung1.github.io/'>Hchung1</a></h1>
+<style>
+  body {
+    background-image: url('forest.jpeg');
+    background-size: cover;
+    background-position: center center;
+  }
+  .button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+  }
+  .header{
+   background: #ee8713;
+  }
+  .box{
+   background: #25eea5;
+  }
+</style>
+</head>
+<body>
+  <div>
+    <div class="container-fluid">
+      <button id="about"><b>About</b></button>
+      <button id="download"><b>Download</b></button>
+      <button id="about"><b>About</b></button>
+      <button id="source"><b>Source</b></button>
+    </div>
+    <br>
+    <div class="container-fluid box">
+      <label><b>Links to the images in the text below...</b><label>
+      <br>
+      
+      <a href='https://www.pexels.com/photo/landscape-nature-sky-spring-62301/'>The Background Image Source</a>
+      
+      <br>
+      
+      <a href='https://www.pinterest.com/pin/526780487639945837'>Main Page Image Source</a>
+      <br>
+      <a href='https://icons8.com/icon/new-icons/all'>Icon in Download Page</a>
+      
+      <br>
+      
+      <button class="button" id="source"><b>Sources</b></button>
+    </div>
+  </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('#about').click(function(){
+      $(location).attr('href', 'about.html')
+    });
+    $('#download').click(function(){
+      $(location).attr('href', 'downloadlink.html')
+    });
+    $('#source').click(function(){
+      $(location).attr('href', 'links.html')
+    });
+  });
+</script>
+</html>
+
+
