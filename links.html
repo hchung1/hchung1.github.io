@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>Source Page</title>
-<h1><a class="header" href='https://hchung1.github.io/'>Hchung1</a></h1>
+<h1><a class="header" href='index.html'>Hchung1</a></h1>
 <style>
   body {
     background-image: url('forest.jpeg');
@@ -54,6 +54,9 @@
 <script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
 <script>
   $(document).ready(function() {
+    $('#index').click(function(){
+      $(location).attr('href', 'index.html')
+    });
     $('#about').click(function(){
       $(location).attr('href', 'about.html')
     });
